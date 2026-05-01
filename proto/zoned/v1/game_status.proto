@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zoned.v1;
+
+enum GameStatus {
+  GAME_STATUS_UNSPECIFIED = 0;
+  GAME_STATUS_LOBBY = 1;
+  GAME_STATUS_IN_GAME = 2;
+  GAME_STATUS_GAME_OVER = 3;
+}

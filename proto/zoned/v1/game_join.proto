@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package zoned.v1;
+
+import 'zoned/v1/game_status.proto';
+import 'zoned/v1/game_zone.proto';
+
+message GameJoin {
+  GameStatus status = 1;
+  repeated string players = 2;
+  GameZone zone = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zoned.v1;
+
+message GameZone {
+  double center_lat = 1;
+  double center_lon = 2;
+  double radius_meters = 3;
+}

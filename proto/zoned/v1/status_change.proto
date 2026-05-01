@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zoned.v1;
+
+import 'zoned/v1/game_status.proto';
+
+message StatusChange {
+  GameStatus status = 1;
+}
