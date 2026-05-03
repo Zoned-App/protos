@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package zoned.v1;
 
-import 'zoned/v1/game_status.proto';
-import 'zoned/v1/game_zone.proto';
+import 'zoned/v1/status.proto';
+import 'zoned/v1/zone.proto';
 
 message GameJoin {
   GameStatus status = 1;

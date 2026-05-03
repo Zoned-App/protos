@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package zoned.v1;
 
-import 'zoned/v1/game_status.proto';
+import 'zoned/v1/status.proto';
 
 message StatusChange {
   GameStatus status = 1;

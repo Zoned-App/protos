@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zoned.v1;
+
+import "zoned/v1/zone.proto";
+
+message CreateGame {
+  GameZone zone = 1;
+}
