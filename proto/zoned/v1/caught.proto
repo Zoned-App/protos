@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package zoned.v1;
+
+message HiderCaught {
+  int32 id = 1;
+}

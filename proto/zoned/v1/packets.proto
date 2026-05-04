@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package zoned.v1;
+
+import "zoned/v1/location.proto";
+import "zoned/v1/nearby.proto";
+import "zoned/v1/status_change.proto";
+
+message ServerBoundPacket {
+  oneof packet {
+    Location location = 1;
+  }
+}
+
+message ClientBoundPacket {
+  oneof packet {
+    StatusChange status_change = 1;
+    SeekerNearby seeker_nearby = 2;
+  }
+}
